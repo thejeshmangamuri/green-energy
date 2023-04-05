@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+/* font-family: 'Abril Fatface', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/* font-family: 'Lato', sans-serif; */
+
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* navigation bar */
+nav li {
+  margin-left: 2rem;
+  list-style-type: none;
+  margin-top: 1rem;
+  
+}
+
+nav a {
+  text-decoration: none;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 1rem;
+  color:#089447;
+  text-decoration: none;
+}
+
+.masthead {
+  background-image: url('../img/banner-image.png');
+  background-size: cover;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.masthead h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  
+}
+
+button {
+  margin-top: 2rem;
+  background-color: black;
+  border-radius: 50%;
+}
+
+button:hover {
+  background-color: whitesmoke;
+}
+
+button img {
+  display: flex;
+  justify-content: space-between;
+  max-width: 5rem;
+  height: auto;
+}
+
+.social-media img {
+  padding-right: 1rem;
+  max-width: 4rem;
+}
+
+.company-info {
+  font-family: 'Lato', sans-serif;
+  color: whitesmoke;
+}
+
+#content {
+  margin-bottom: 3rem;
+
+}
+#content h2 {
+  font-family: 'Abril Fatface', cursive;
+  color: #089447;
+}
+
+#content img {
+  max-width: 100%;
+}
+
+footer {
+  color: white;
+  padding: 2rem;
+  background-color: black;
+}
+
+
+@media only screen and (min-width: 60rem) { 
+
+  #content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-gap: 2rem;
+  }
+  #content h2 {
+      grid-row: 1/2;
+      grid-column: 1/2;
+  }
+  #content img {
+      grid-row: 2/3;
+      grid-column: 1/2;
+  }
+  #content p {
+      grid-row: 2/3;
+      grid-column: 2/4;
+  }
+  nav {
+    color: #fff;
+    padding: 0.5rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: 20rem;
+  }
+  
+  nav li {
+    margin-left: 10rem;
+  }
+  
+  nav ul li a {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.5rem;
+    color:black;
+    text-decoration: none;
+    padding: 0.5rem;
+
+  }
+  
+  nav ul li a:hover {
+    background-color:  #089447;
+    font-family: 'Abril Fatface', cursive;
+  }
+  
+  nav ul li a.active {
+    background-color: #089447;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    width: 100vw;
+    padding: 2rem;
+    background-color: black;
+  }
+
+}
+
+
